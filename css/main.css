@@ -1,7 +1,55 @@
 html,body{
 	margin:0;
 	padding:0;
-	widht:100px;
-	height:100px;
+	width:100%;
+	height:100%;
+
+}
+header,nav,footer,main,aside{
+	height: 10%;
+}
+header{
+	background-color: deepskyblue;
+}
+nav{
+	background-color: aquamarine;
+}
+main{
+	background-color: grey;
+	float: left;
+	width: 50%;
+}
+
+aside{
+	background-color: yellow;
+	float: left;
+	width: 50%;
+}
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: blue;
+}
+@media screen and (max-width: 200px){
+	footer{
+		background-color: black;
+	}
+}
+#container{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 1;
+	top:0;
+	background-color: rgba(255,255,255,0.9);
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+#model{
+	height: 40vh;
+	width: 30vw;
+	background-color: chocolate;
 
 }
